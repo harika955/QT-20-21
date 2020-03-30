@@ -1,0 +1,24 @@
+pipeline
+{
+    agent any
+    stages{
+        stage ('compile')
+        {
+            steps{
+                echo " i am in compile"
+            }
+        }
+         stage ('build')
+        {
+            steps{
+                echo " i am in build"
+            }
+        }
+         stage ('test')
+        {
+            steps{
+                echo " i am in test"
+            }
+        }
+    }
+}
